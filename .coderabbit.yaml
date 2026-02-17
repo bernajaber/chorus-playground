@@ -1,0 +1,30 @@
+language: en
+reviews:
+  profile: assertive
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - '!docs/**'
+    - '!*.md'
+    - 'src/**'
+    - 'tests/**'
+    - 'cli/**'
+  path_instructions:
+    - path: 'src/**'
+      instructions: |
+        - Every new file in src/ must have a corresponding test file
+        - Functions over 50 lines should be flagged
+        - All errors must be handled explicitly, never swallowed
+        - Prefer early returns over nested conditionals
+    - path: 'tests/**'
+      instructions: |
+        - Tests must have descriptive names explaining the scenario
+        - Each test should test one behavior
+        - Mock external dependencies (gh CLI, zeroshot CLI, git)
+chat:
+  auto_reply: true
