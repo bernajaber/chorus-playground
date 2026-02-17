@@ -14,7 +14,8 @@
   },
   "bin": {
     "hello": "./dist/hello.js",
-    "goodbye": "./dist/goodbye.js"
+    "goodbye": "./dist/goodbye.js",
+    "greet": "./dist/greet.js"
   },
   "repository": {
     "type": "git",
