@@ -16,7 +16,7 @@
     "hello": "./dist/hello.js",
     "goodbye": "./dist/goodbye.js",
     "greet": "./dist/greet.js",
-    "chorus": "./dist/version.js"
+    "chorus": "./dist/help.js"
   },
   "repository": {
     "type": "git",
