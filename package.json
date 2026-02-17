@@ -4,7 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc",
+    "start": "node dist/hello.js"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "bin": {
+    "hello": "./dist/hello.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +28,9 @@
   },
   "homepage": "https://github.com/bernajaber/chorus-playground#readme",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
     "typescript": "^5.9.3"
   }
 }
