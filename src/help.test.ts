@@ -14,6 +14,7 @@ test('help lists all commands', () => {
 
 test('commands array includes hello, goodbye, greet, chorus', () => {
   const names = commands.map((c) => c.name);
+  expect(names.length).toBe(4);
   expect(names).toContain('hello');
   expect(names).toContain('goodbye');
   expect(names).toContain('greet');
