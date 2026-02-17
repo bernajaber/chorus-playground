@@ -15,7 +15,8 @@
   "bin": {
     "hello": "./dist/hello.js",
     "goodbye": "./dist/goodbye.js",
-    "greet": "./dist/greet.js"
+    "greet": "./dist/greet.js",
+    "chorus": "./dist/version.js"
   },
   "repository": {
     "type": "git",
